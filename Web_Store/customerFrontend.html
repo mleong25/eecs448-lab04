@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Snacks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="formChecker.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+</head>
+<body>
+    <form action="customerBackend.php" id="checkout" method="get">
+        Username<input type="email" id="email" name="email"><br>
+        Password<input type="password" id="password" name="password"><br>
+        <br>Shipping<br>
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="shipping" id="shipping" value="Free 7 day">Free 7 day
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="shipping" id="shipping" value="$5.00 three day">$5.00 three day
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="shipping" id="shipping" value="$50.00 over night">$50.00 over night<br>
+        <br>Cart<br>
+            &nbsp;&nbsp;&nbsp;Snacks $2.00<input type="number" name="snack" id="snack" value="snack"><br>
+            &nbsp;&nbsp;&nbsp;Candy $1.00<input type="number" name="candy" id="candy" value="candy"><br>
+            &nbsp;&nbsp;&nbsp;Drink $3.00<input type="number" name="drink" id="drink" value="drink"><br>
+        <br><br>Submit<input type="submit" onclick="return validate()">
+        Reset<input type="reset" onclick="reset()">
+    <form/>
+</body>
+</html>

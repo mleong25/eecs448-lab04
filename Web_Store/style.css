@@ -1,0 +1,21 @@
+body {
+    background-color: whitesmoke;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff6000;
+}
+
+h1:hover {
+    color: #000000;
+}
+
+
+th, td {
+    padding: 15px
+}
+
+.receipt {
+    color: #000fe7;
+}
